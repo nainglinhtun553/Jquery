@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Changing Callback</title>
+	<style>
+		.obj{
+			width:300px;
+			height:100px;
+			background:gray;
+			margin-top:10px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+
+	<button class="animate">Animate</button>
+	<button class="stop">stop</button>
+	<div class="obj"></div>
+	<button class="chain">chain</button>
+	<p class="obj2">
+		I am Naing Lin Htun.
+	</p>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(".animate").click(function(){
+				$(".obj").animate({
+					left:"+=50px",
+					top:"+=100px"
+				},3000,function(){
+					console.log("animation is finished!");
+				});
+		});
+		// stop function section
+
+		$(".stop").click(function(){
+			$(".obj").stop();
+		});
+
+		// chain function section
+		$(".chain").click(function(){
+			$(".obj2").css("color","blue").hide(2000).show(1000);
+		});
+	</script>
+</body>
+</html>

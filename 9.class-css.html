@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>class and css exerise</title>
+	<style>
+		/*#p{
+			color:pink;
+		}*/
+
+
+		.fortext{
+			font-size:30px;
+			font-family:serif;
+			color:blue;
+			font-weight:bolder;
+
+		}
+
+		.one{
+			font-size:40px;
+			color:green;
+		}
+	</style>
+</head>
+<body>
+	<p id="p" style="color:blue;" class="one two three">Min Ga Lar Par</p>
+	<button id="change">change</button>
+
+	<script src="js/jquery.js"></script>
+	<script>
+		$("#change").click(function(){
+			// let p=$("#p").css({
+			// 	color:"blue",
+			// 	fontSize:"20px",
+			// 	fontStyle:"italic"
+			// });
+
+			// get color value with RGB value.
+			// let p = $("#p").css("color");
+
+			// add class
+			// let p=$("#p").addClass("fortext");
+
+			//remove class
+			// let p=$("#p").removeClass("one");
+
+			// toggleclass
+			// let p=$("#p").toggleClass("one");
+
+			// catch class attribute
+			// let p=$("#p").attr("class");
+			// console.log(p);
+
+			let p=$("#p").height();
+			console.log(p);
+		});
+	</script>
+
+</body>
+</html>

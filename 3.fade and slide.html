@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Show and Hide action</title>
+	<style>
+		.all-section{
+			margin:100px 300px;
+		}
+
+	.obj{
+		width:800px;
+		height:400px;
+		background:gray;
+		display:block;
+		margin-bottom: 10px
+	}
+	.all-btn{
+		width:800px;
+		height:400px;
+		text-align:center;
+	}
+
+	.hidebtn{
+		width:80px;
+		height:40px;
+		background:#2196F3;
+		border-radius: 5px;
+		border-color:white;
+		color:white;
+	}
+
+
+	.hidebtn:hover{
+		background:white;
+		color:black;
+		border-color:black;
+	}
+
+
+	.showbtn{
+		width:80px;
+		height:40px;
+		background:#2196F3;
+		border-radius: 5px;
+		border-color:white;
+		color:white;
+	}
+
+	.showbtn:hover{
+		background:white;
+		color:black;
+		border-color:black;
+	}
+
+	.togglebtn{
+		width:80px;
+		height:40px;
+		background:#2196F3;
+		border-radius: 5px;
+		border-color:white;
+		color:white;
+	}
+
+	.togglebtn:hover{
+		background:white;
+		color:black;
+		border-color:black;
+	}
+
+	.to{
+		width:80px;
+		height:40px;
+		background:#2196F3;
+		border-radius: 5px;
+		border-color:white;
+		color:white;
+	}
+
+	.to:hover{
+		background:white;
+		color:black;
+		broder-color:black;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div class="all-section">
+
+		<img src="img/show.jpg" alt="" class="obj">
+		<div class="all-btn">
+			<button class="hidebtn">Hide</button>
+			<button class="showbtn">Show</button>
+			<button class="togglebtn">Toggle</button>
+			<button class="to">fadeTo</button>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+
+
+		// to hide the content 
+		// $(selector).action()
+		// $(".hidebtn").click(function(){
+		// 	$(".obj").fadeOut(1000);
+		// });
+
+		// // to show the content 
+		// $(".showbtn").click(function(){
+		// 	$(".obj").fadeIn(1000);
+		// });
+
+		// // to toggle the content
+		// $(".togglebtn").click(function(){
+		// 	$(".obj").fadeToggle(1000);
+		// })
+
+
+		$(".hidebtn").click(function(){
+			$(".obj").slideUp(1000,function(){
+				console.log("This is slide up function");
+			});
+		});
+
+		// to show the content 
+		$(".showbtn").click(function(){
+			$(".obj").slideDown(1000);
+		});
+
+		// to toggle the content
+		$(".togglebtn").click(function(){
+			$(".obj").slideToggle(1000);
+		})
+
+
+		//to 
+		$(".to").click(function(){
+			$(".obj").fadeTo(1000,0.5);
+		})
+
+
+	</script>
+	
+</body>
+</html>

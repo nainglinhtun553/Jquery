@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Remove Element By JQuery</title>
+</head>
+<body>
+	<ul id="select">
+		<li>mm</li>
+		<li>cn</li>
+		<li>kr</li>
+	</ul>
+
+	<script src="js/jquery.js"></script>
+	<script>
+		//apppend method
+		$("#select").append(`<li>us</li>`);
+		$("#select").append(`<li>uk</li>`);
+
+		//prepend method
+		$("#select").prepend(`<li>one</li>`);
+		$("#select").prepend(`<li>two</li>`);
+
+		//before and after
+		$("#select").before("<p>this is before</p>");
+		$("#select").after("<p>this is after</p>");
+
+
+		// remove and empty
+		// $("#select").empty();
+		$("#select").remove();
+
+	</script>
+	
+</body>
+</html>

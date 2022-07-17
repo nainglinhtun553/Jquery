@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jquery introduction</title>
+	<style>
+		#test{
+			background:#673AB7;
+			color:yellow;
+			border:1px solid blue;
+		}
+
+		
+	</style>
+
+</head>
+<body>
+
+	<div id="test">
+		<h1>This is test.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorem cupiditate voluptate reprehenderit dolorum dolores, fuga assumenda, iure? Neque eveniet deleniti tenetur cum cupiditate aperiam ea ducimus facere commodi mollitia.</p>
+	</div>
+	
+
+
+	
+
+	<script src="js/jquery.js"></script>
+	<script>
+
+		//written by js
+		// document.getElementById("test").innerHTML="change by js";
+		// $("#test").html("change by js");
+
+		// click hide function with timout using callback function.
+		$("#test").click(function(){
+			$(this).hide(1000,function(){
+
+				document.write(`<h2 style="background:#FF80AB;color:white;font-family: 'Times New Roman', serif;font-style:italic; text-align:center;margin-top:200px;width:400px;height:200px;padding-top:30px;margin-left:500px;">"this content is hidden by Jquery.<br>😃😃😃😃😍😍😍😍😍😍😍😍"<br><button>click</button></br>`);
+
+			});
+
+			
+		
+		});
+		
+	</script>
+</body>
+</html>

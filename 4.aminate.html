@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aminate Exerise</title>
+	<style>
+		.obj{
+			width:300px;
+			height:100px;
+			background:#E91E63;
+			margin-top:10px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+	<button class="animate">Animate</button>
+	<div class="obj"></div>
+
+
+
+<script src="js/jquery.js"></script>
+<script>
+	$(".animate").click(function(){
+		$(".obj").animate({
+			// width animation
+			// width:"500px"
+
+			// height animation
+			// height:"300px"
+
+
+			// toggle animation
+
+			// height:"toggle",
+			// width:"toggle"
+
+
+			//opacity animation
+			 // opacity:"0.5"
+
+			 //opacity toggle animation
+			 //opacity:"toggle"
+
+			 // position right animation associated with position relative
+			 // left:"50px",
+			 // top:"100px"
+
+			left:"+=50px",
+			 top:"+=100px"
+
+		},3000);
+	});
+</script>
+</body>
+</html>

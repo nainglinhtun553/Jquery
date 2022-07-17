@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> set and get jquery exerise</title>
+</head>
+<body>
+
+	<p id="p" title="san kyi thar">this is p tags.</p><br>
+	<input type="text" class="input"><br><br>
+	<select name="" id="select">
+		<option value="mm">mm</option>
+		<option value="cn">cn</option>
+		<option value="kr">kr</option>
+	</select><br><br>
+
+	<button class="btn">click</button>
+
+	<script src="js/jquery.js"></script>
+	<script>
+		$(".btn").click(function(){
+				//set method of jquery
+				// let d=$("#p").html("I wanna change");
+				// let d=$(".input").val("I wanna change");
+				// let d=$("#select").val("kr");
+				let d=$("#p").attr("title","change by jquery");			 
+
+		});
+	</script>
+</body>
+</html>
